@@ -1,6 +1,15 @@
 #!/usr/bin/env bash
 
-while read -r pkg
+set -e
+
+for file in packages/*.txt
 do
-	sudo pacman -S --needed --noconfirm "$pkg"
-done < packages/main.txt
+	echo ""
+	echo "Installing packages from  $file"
+	
+	while read -r pkg
+	do
+		[[ -z "$pkg" ]] && continue
+		sudo pacman -S --needed --noconfirm "$pkg"
+	done < "$file"
+done
