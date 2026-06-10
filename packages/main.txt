@@ -1,0 +1,4 @@
+konsole
+git
+firefox
+discord
