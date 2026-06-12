@@ -10,5 +10,6 @@ bash "$SCRIPT_DIR/system/services.sh"
 bash "$SCRIPT_DIR/packages/base.sh"
 bash "$SCRIPT_DIR/packages/aur.sh"
 bash "$SCRIPT_DIR/packages/media.sh"
+bash "$SCRIPT_DIR/programSetups/gitLogin.sh"
 
-echo "Packages installed"
+echo "Arch stup complete."

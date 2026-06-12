@@ -9,11 +9,13 @@ sudo pacman -Syu --noconfirm
 echo  "Installing base packages..."
 
 sudo pacman -S --needed --noconfirm \
-	nano \
 	git \
+	github-cli \
 	base-devel \
+	nano \
 	konsole \
 	dolphin \
+	gwenview \
 	firefox 
 
 echo "Installed base packages."
