@@ -1,15 +1,26 @@
 [Desktops]
-Id_1=f111eba0-f52c-47b3-a8ec-bd943b625174
-Id_2=fa6da52e-7f05-4f6c-9eb7-d092f88fea9f
+Id_1=fa6da52e-7f05-4f6c-9eb7-d092f88fea9f
+Id_2=3bd8ddf0-769b-48b8-90fd-e5eb93c38b24
+Name_1=Desktop 2
 Number=2
 Rows=1
+
+[Effect-overview]
+BorderActivate=9
 
 [Effect-translucency]
 MoveResize=76
 
+[NightColor]
+Active=true
+
 [Plugins]
 fallapartEnabled=true
 translucencyEnabled=true
+
+[Tiling][3bd8ddf0-769b-48b8-90fd-e5eb93c38b24][d9b51b69-8cd8-40ca-bc4e-c53e378353a5]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][f111eba0-f52c-47b3-a8ec-bd943b625174][d9b51b69-8cd8-40ca-bc4e-c53e378353a5]
 padding=4

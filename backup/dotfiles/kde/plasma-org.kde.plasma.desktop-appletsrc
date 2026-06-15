@@ -55,6 +55,10 @@ plugin=org.kde.plasma.kickoff
 popupHeight=509
 popupWidth=647
 
+[Containments][2][Applets][3][Configuration][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
+
 [Containments][2][Applets][3][Configuration][General]
 favoritesPortedToKAstats=true
 
@@ -83,10 +87,6 @@ plugin=org.kde.plasma.systemtray
 popupHeight=432
 popupWidth=432
 wallpaperplugin=org.kde.image
-
-[Containments][2][Applets][7][Applets][10]
-immutability=1
-plugin=org.kde.plasma.weather
 
 [Containments][2][Applets][7][Applets][11]
 immutability=1
@@ -142,10 +142,6 @@ plugin=org.kde.plasma.battery
 [Containments][2][Applets][7][Applets][24][Configuration][General]
 showPercentage=true
 
-[Containments][2][Applets][7][Applets][25]
-immutability=1
-plugin=org.kde.plasma.brightness
-
 [Containments][2][Applets][7][Applets][26]
 immutability=1
 plugin=org.kde.plasma.mediacontroller
@@ -158,13 +154,18 @@ plugin=org.kde.plasma.vault
 immutability=1
 plugin=org.kde.plasma.devicenotifier
 
+[Containments][2][Applets][7][ConfigDialog]
+DialogHeight=1073
+DialogWidth=1840
+
 [Containments][2][Applets][7][General]
-extraItems=org.kde.plasma.vault,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.battery,org.kde.plasma.weather,org.kde.plasma.notifications,org.kde.plasma.volume,org.kde.plasma.keyboardindicator,org.kde.kscreen,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.networkmanagement,org.kde.plasma.keyboardlayout,org.kde.plasma.printmanager,org.kde.plasma.clipboard,org.kde.plasma.bluetooth,org.kde.plasma.manage-inputmethod
+extraItems=org.kde.plasma.vault,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.battery,org.kde.plasma.notifications,org.kde.plasma.volume,org.kde.plasma.keyboardindicator,org.kde.kscreen,org.kde.plasma.cameraindicator,org.kde.plasma.networkmanagement,org.kde.plasma.keyboardlayout,org.kde.plasma.printmanager,org.kde.plasma.clipboard,org.kde.plasma.manage-inputmethod,org.kde.plasma.bluetooth
 knownItems=org.kde.plasma.vault,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.battery,org.kde.plasma.weather,org.kde.plasma.notifications,org.kde.plasma.volume,org.kde.plasma.keyboardindicator,org.kde.kscreen,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.networkmanagement,org.kde.plasma.keyboardlayout,org.kde.plasma.printmanager,org.kde.plasma.clipboard,org.kde.plasma.bluetooth,org.kde.plasma.manage-inputmethod
+shownItems=org.kde.plasma.bluetooth
 
 [Containments][2][General]
 AppletOrder=3;5;6;7;21;22
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/steam.desktop,0,2dea3850-6cd3-4fae-b7c6-2cedb5534cb2
+screenMapping=
