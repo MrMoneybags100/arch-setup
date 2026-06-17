@@ -27,7 +27,7 @@ fi
 
 echo "Installing AUR packages..."
 
-yay -S --needed --noconfirm \
-	spotify
+#yay -S --needed --noconfirm \
+#	spotify
 
 echo "AUR packages installed."

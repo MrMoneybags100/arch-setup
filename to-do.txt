@@ -1,0 +1,4 @@
+Setup and save dotfile for system monitor
+Fix audio thing screwing up on lid close, backup the config afterwards
+task launcher Icon
+Arduino IDE

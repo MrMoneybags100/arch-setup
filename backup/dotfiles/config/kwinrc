@@ -1,8 +1,10 @@
 [Desktops]
 Id_1=fa6da52e-7f05-4f6c-9eb7-d092f88fea9f
 Id_2=3bd8ddf0-769b-48b8-90fd-e5eb93c38b24
+Id_3=5a7145fa-6068-493e-93c7-5e8980db3d80
+Id_4=596e223b-4d27-4a92-9c15-7d8c117eb496
 Name_1=Desktop 2
-Number=2
+Number=4
 Rows=1
 
 [Effect-overview]
@@ -19,6 +21,14 @@ fallapartEnabled=true
 translucencyEnabled=true
 
 [Tiling][3bd8ddf0-769b-48b8-90fd-e5eb93c38b24][d9b51b69-8cd8-40ca-bc4e-c53e378353a5]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][596e223b-4d27-4a92-9c15-7d8c117eb496][d9b51b69-8cd8-40ca-bc4e-c53e378353a5]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][5a7145fa-6068-493e-93c7-5e8980db3d80][d9b51b69-8cd8-40ca-bc4e-c53e378353a5]
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
