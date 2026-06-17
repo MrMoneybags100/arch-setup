@@ -3,17 +3,18 @@
 set -e
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+export ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 
 
 echo "Starting Arch setup..."
 
-bash "$SCRIPT_DIR/restore/system/services.sh"
+bash "$SCRIPT_DIR/restore/services.sh"
 bash "$SCRIPT_DIR/restore/pacmanPacks.sh"
 bash "$SCRIPT_DIR/restore/aur.sh"
-bash "$SCRIPT_DIR/restore/configs/miscFiles.sh"
-bash "$SCRIPT_DIR/restore/configs/dotFiles.sh"
-bash "$SCRIPT_DIR/restore/configs/gitLogin.sh"
+bash "$SCRIPT_DIR/restore/miscFiles.sh"
+bash "$SCRIPT_DIR/restore/dotFiles.sh"
+bash "$SCRIPT_DIR/restore/gitLogin.sh"
 
 echo "Arch stup complete."
 

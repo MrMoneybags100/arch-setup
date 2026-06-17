@@ -2,6 +2,8 @@
 
 set -e
 
+
+
 echo "Enabling system services..."
 
 sudo systemctl enable --now NetworkManager.service

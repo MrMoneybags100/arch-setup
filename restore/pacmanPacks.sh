@@ -23,7 +23,8 @@ sudo pacman -S --needed --noconfirm \
 	ripgrep \
 	fd \
 	firefox \
-	thunderbird
+	thunderbird \
+	libreoffice-still
 echo "Base packages installed."
 
 

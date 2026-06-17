@@ -1,0 +1,10 @@
+[Added Associations]
+application/json=vim.desktop;firefox.desktop;
+x-scheme-handler/mailto=userapp-Thunderbird-3A87Q3.desktop;
+x-scheme-handler/mid=userapp-Thunderbird-3A87Q3.desktop;
+
+[Default Applications]
+application/json=vim.desktop;
+x-scheme-handler/mailto=userapp-Thunderbird-3A87Q3.desktop
+message/rfc822=userapp-Thunderbird-3A87Q3.desktop
+x-scheme-handler/mid=userapp-Thunderbird-3A87Q3.desktop
