@@ -2,15 +2,16 @@
 
 set -e
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-export ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+
+export BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)" 
+export BACKUP_DIR="$BASE_DIR/backup"
+export RESTORE_DIR="$BASE_DIR/restore"
 
 
 echo "Starting Backup..."
 
-bash "$SCRIPT_DIR/backup/miscFiles.sh"
-bash "$SCRIPT_DIR/backup/dotfiles.sh"
+bash "$BASE_DIR/backup/dotfiles.sh"
 
 echo "Backup complete."
 

@@ -1,1 +1,2 @@
 Arduino IDE
+test script on other laptop

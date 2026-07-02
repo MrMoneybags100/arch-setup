@@ -11,25 +11,29 @@ sudo pacman -Syu --noconfirm
 echo "System updated."
 
 
-echo "Installing base packages..."
+echo "Installing pacman packages..."
+
 sudo pacman -S --needed --noconfirm \
+	# Core Utilities
         git \
         github-cli \
         base-devel \
         nano \
+	ripgrep \
+	fd \
+	wine \
+	wine-mono \
+	wine-gecko \
+	winetricks \
+	# KDE Applications
         konsole \
         dolphin \
         gwenview \
-	ripgrep \
-	fd \
+	# Standard Tooling
 	firefox \
 	thunderbird \
-	libreoffice-still
-echo "Base packages installed."
-
-
-echo "Installing development packages..."
-sudo pacman -S --needed --noconfirm \
+	libreoffice-still \
+	# development Stuff
         gcc \
         cmake \
         python \
@@ -37,15 +41,11 @@ sudo pacman -S --needed --noconfirm \
         npm \
         docker \
         docker-compose \
-        docker-buildx
-
-echo "Installed development packages."
-
-
-echo  "Installing media  packages..."
-
-sudo pacman -S --needed --noconfirm \
+        docker-buildx \
+	ollama \
+	# Media/Entertainment
         discord \
-        spotify-launcher
+        spotify-launcher \
+	steam
 
-echo "Media packages installed."
+echo "Pacman  packages installed."

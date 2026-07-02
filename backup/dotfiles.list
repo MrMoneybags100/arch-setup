@@ -1,0 +1,31 @@
+# KDE
+.config/kdeglobals
+.config/kwinrc
+.config/plasma-org.kde.plasma.desktop-appletsrc
+.config/ksplashrc
+.config/plasmarc
+.config/kglobalshortcutsrc
+.config/xsettingsd/xsettingsd.conf
+
+# Power
+.config/powerdevilrc
+.config/powermanagementprofilesrc
+
+# MIME
+.config/mimeapps.list
+
+# Bash
+.bashrc
+
+# WirePlumber
+.config/wireplumber/wireplumber.conf.d/51-disable-suspend.conf
+
+# System Monitor Config
+.local/share/plasma-systemmonitor/
+
+# User-installed plasmoids
+.local/share/plasma/plasmoids/
+
+# Pictures
+Pictures/Icons/
+Pictures/Wallpapers/

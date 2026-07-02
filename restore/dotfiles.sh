@@ -6,6 +6,6 @@ set -e
 
 echo "Restoring dotfiles from backup..."
 
-cp -a "$ROOT_DIR/backup/dotfiles/." ~/
+cp -a "$BACKUP_DIR/dotfiles/." ~/
 
 echo "Dotfiles restored."

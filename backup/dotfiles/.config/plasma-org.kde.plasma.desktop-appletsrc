@@ -5,8 +5,8 @@ RightButton;NoModifier=org.kde.contextmenu
 RightButton;NoModifier=org.kde.contextmenu
 
 [Containments][1]
-ItemGeometries-1840x1150=
-ItemGeometriesHorizontal=
+ItemGeometries-1840x1150=Applet-28:656,224,640,160,0;Applet-27:1632,1008,208,64,0;
+ItemGeometriesHorizontal=Applet-28:656,224,640,160,0;Applet-27:1632,1008,208,64,0;
 activityId=2dea3850-6cd3-4fae-b7c6-2cedb5534cb2
 formfactor=0
 immutability=1
@@ -14,6 +14,35 @@ lastScreen=0
 location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
+
+[Containments][1][Applets][27]
+immutability=1
+plugin=org.kde.olib.thermalmonitor
+
+[Containments][1][Applets][27][Configuration]
+popupHeight=400
+popupWidth=560
+
+[Containments][1][Applets][27][Configuration][Behavior]
+updateInterval=2
+
+[Containments][1][Applets][27][Configuration][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
+
+[Containments][1][Applets][27][Configuration][General]
+sensors=[{"name":"Average CPU Temperature","sensorId":"cpu/all/averageTemperature"}]
+
+[Containments][1][Applets][28]
+immutability=1
+plugin=com.github.prayag2.modernclock
+
+[Containments][1][Applets][28][Configuration]
+UserBackgroundHints=
+
+[Containments][1][Applets][28][Configuration][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
 
 [Containments][1][ConfigDialog]
 DialogHeight=630
@@ -61,6 +90,7 @@ DialogWidth=810
 
 [Containments][2][Applets][3][Configuration][General]
 favoritesPortedToKAstats=true
+highlightNewlyInstalledApps=false
 icon=/home/will/Pictures/Icons/AppLaunchIcon.png
 systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 

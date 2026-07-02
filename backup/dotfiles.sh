@@ -4,55 +4,28 @@ set -e
 
 
 
+MANIFEST="$BACKUP_DIR/dotfiles.list"
+
 echo "Backing up dotfiles..."
 
-mkdir -p "$ROOT_DIR/backup/dotfiles/.config"
-mkdir -p "$ROOT_DIR/backup/dotfiles/.local"
+while IFS= read -r item || [[ -n "$item" ]]; do
 
+    # Ignore blank lines and comments
+    [[ -z "$item" || "$item" =~ ^# ]] && continue
 
-# General KDE appearance
-cp ~/.config/kdeglobals "$ROOT_DIR/backup/dotfiles/.config/"
- 
-# Window management
-cp ~/.config/kwinrc "$ROOT_DIR/backup/dotfiles/.config/"
+    src="$HOME/$item"
+    dst="$BACKUP_DIR/dotfiles/$item"
 
-# Desktop layout
-cp ~/.config/plasma-org.kde.plasma.desktop-appletsrc "$ROOT_DIR/backup/dotfiles/.config/"
+    if [[ -d "$src" ]]; then
+        mkdir -p "$dst"
+        cp -a "$src/." "$dst/"
+    elif [[ -f "$src" ]]; then
+        mkdir -p "$(dirname "$dst")"
+        cp "$src" "$dst"
+    else
+        echo "Skipping missing: $item"
+    fi
 
-# Splash screen
-cp ~/.config/ksplashrc "$ROOT_DIR/backup/dotfiles/.config/"
-
-# General plasma settings
-cp ~/.config/plasmarc "$ROOT_DIR/backup/dotfiles/.config/"
- 
-# Global shortcuts
-cp ~/.config/kglobalshortcutsrc "$ROOT_DIR/backup/dotfiles/.config/"
- 
-# Window settings?
-mkdir -p "$ROOT_DIR/backup/dotfiles/.config/xsettingsd"
-cp ~/.config/xsettingsd/xsettingsd.conf "$ROOT_DIR/backup/dotfiles/.config/xsettingsd/"
-
-# Mentions power profile
-cp ~/.config/powerdevilrc "$ROOT_DIR/backup/dotfiles/.config/"
-
-# Power settting AC/Battery
-cp ~/.config/powermanagementprofilesrc "$ROOT_DIR/backup/dotfiles/.config/"
-
-# App defaults?
-cp ~/.config/mimeapps.list "$ROOT_DIR/backup/dotfiles/.config/"
-
-# Bash alias's/customisation
-cp ~/.bashrc "$ROOT_DIR/backup/dotfiles/"
-
-# Disable strange audio cut out thing
-mkdir -p "$ROOT_DIR/backup/dotfiles/.config/wireplumber/wireplumber.conf.d"
-cp ~/.config/wireplumber/wireplumber.conf.d/51-disable-suspend.conf "$ROOT_DIR/backup/dotfiles/.config/wireplumber/wireplumber.conf.d/"
-
-# System monitor configuration
-mkdir -p "$ROOT_DIR/backup/dotfiles/.local/share/plasma-systemmonitor"
-cp ~/.local/share/plasma-systemmonitor/applications.page "$ROOT_DIR/backup/dotfiles/.local/share/plasma-systemmonitor"
-cp ~/.local/share/plasma-systemmonitor/overview.page "$ROOT_DIR/backup/dotfiles/.local/share/plasma-systemmonitor"
-cp ~/.local/share/plasma-systemmonitor/processes.page "$ROOT_DIR/backup/dotfiles/.local/share/plasma-systemmonitor"
-
+done < "$MANIFEST"
 
 echo "Dotfiles backup complete."
