@@ -11,12 +11,11 @@ export RESTORE_DIR="$BASE_DIR/restore"
 
 echo "Starting Arch setup..."
 
-bash "$RESTORE_DIR/restore/services.sh"
-bash "$RESTORE_DIR/restore/pacmanPacks.sh"
-bash "$RESTORE_DIR/restore/aur.sh"
-bash "$RESTORE_DIR/restore/miscFiles.sh"
-bash "$RESTORE_DIR/restore/dotFiles.sh"
-bash "$RESTORE_DIR/restore/gitLogin.sh"
+bash "$RESTORE_DIR/services.sh"
+bash "$RESTORE_DIR/pacmanPacks.sh"
+bash "$RESTORE_DIR/aur.sh"
+bash "$RESTORE_DIR/dotfiles.sh"
+bash "$RESTORE_DIR/gitLogin.sh"
 
 echo "Arch stup complete."
 

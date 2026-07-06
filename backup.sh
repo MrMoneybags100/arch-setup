@@ -11,7 +11,7 @@ export RESTORE_DIR="$BASE_DIR/restore"
 
 echo "Starting Backup..."
 
-bash "$BASE_DIR/backup/dotfiles.sh"
+bash "$BACKUP_DIR/dotfiles.sh"
 
 echo "Backup complete."
 
