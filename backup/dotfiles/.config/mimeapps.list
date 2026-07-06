@@ -1,10 +1,22 @@
 [Added Associations]
-application/json=vim.desktop;firefox.desktop;
+application/json=codium.desktop;vim.desktop;firefox.desktop;
+application/x-docbook+xml=codium.desktop;
+application/x-yaml=codium.desktop;
+text/markdown=codium.desktop;
+text/plain=codium.desktop;
+text/x-cmake=codium.desktop;
+text/x-shellscript=codium.desktop;vim.desktop;
 x-scheme-handler/mailto=userapp-Thunderbird-3A87Q3.desktop;
 x-scheme-handler/mid=userapp-Thunderbird-3A87Q3.desktop;
 
 [Default Applications]
-application/json=vim.desktop;
-x-scheme-handler/mailto=userapp-Thunderbird-3A87Q3.desktop
+application/json=codium.desktop;
+application/x-docbook+xml=codium.desktop;
+application/x-yaml=codium.desktop;
 message/rfc822=userapp-Thunderbird-3A87Q3.desktop
+text/markdown=codium.desktop;
+text/plain=codium.desktop;
+text/x-cmake=codium.desktop;
+text/x-shellscript=codium.desktop;
+x-scheme-handler/mailto=userapp-Thunderbird-3A87Q3.desktop
 x-scheme-handler/mid=userapp-Thunderbird-3A87Q3.desktop

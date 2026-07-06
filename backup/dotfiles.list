@@ -20,7 +20,8 @@
 # WirePlumber
 .config/wireplumber/wireplumber.conf.d/51-disable-suspend.conf
 
-# System Monitor Config
+# Applications
+.config/dolphinrc
 .local/share/plasma-systemmonitor/
 
 # User-installed plasmoids

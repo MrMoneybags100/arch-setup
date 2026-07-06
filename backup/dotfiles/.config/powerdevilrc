@@ -1,5 +1,11 @@
+[AC][Display]
+TurnOffDisplayIdleTimeoutSec=900
+
 [AC][Performance]
-PowerProfile=performance
+PowerProfile=power-saver
+
+[Battery][Display]
+TurnOffDisplayIdleTimeoutSec=600
 
 [Battery][Performance]
 PowerProfile=power-saver

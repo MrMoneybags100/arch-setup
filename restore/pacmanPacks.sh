@@ -21,6 +21,7 @@ sudo pacman -S --needed --noconfirm \
         nano \
 	ripgrep \
 	fd \
+	fastfetch \
 	wine \
 	wine-mono \
 	wine-gecko \

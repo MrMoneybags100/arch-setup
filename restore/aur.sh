@@ -29,7 +29,8 @@ fi
 
 echo "Installing AUR packages..."
 
-#yay -S --needed --noconfirm \
-#	spotify
+yay -S --needed --noconfirm \
+	vscodium-bin \
+        orca-slicer-bin
 
 echo "AUR packages installed."
